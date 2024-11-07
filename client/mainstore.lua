@@ -1,0 +1,10 @@
+RegisterNetEvent("cdtrent:storeveh")
+AddEventHandler("cdtrent:storeveh", function (veh, plate)
+    TriggerServerEvent("cdtrent:delvehtable", veh, plate)
+end)
+
+RegisterNetEvent("cdtrent:delveh")
+AddEventHandler("cdtrent:delveh", function (veh)
+    ESX.Game.DeleteVehicle(veh)
+    TriggerEvent("cdtrent:notifstoreveh")
+end)

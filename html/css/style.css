@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  margin-left: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(44, 44, 44);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background: orangered;
+  border-radius: 43px;
+}
+::-webkit-scrollbar-track:hover {
+  background: white;
+}
+::-webkit-scrollbar-track:active {
+  background: grey;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+body {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	align-items: center;
+	justify-content: center;
+    overflow: hidden;
+}
+
+body .content {
+	display: flex;
+	position: absolute;
+	width: 15vw;
+	height: 20vw;
+	margin-left: 25vw;
+	background-color: rgba(0, 0, 0, 0.67);
+	border-radius: 21px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body .content .title {
+	display: flex;
+	position: relative;
+	width: 15vw;
+	height: 3vw;
+	font-family: 'Oswald', sans-serif;
+    font-size: calc(10px + 0.390625vw);
+    text-transform: uppercase;
+    color: orangered;
+    text-shadow: black 1px 2px 0px, black 1px 3px 2.5px;
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 21px 21 0 0;
+	align-items: center;
+	justify-content: center;
+}
+
+body .content .boxes {
+	display: block;
+	position: absolute;
+	width: 14vw;
+	height: 16vw;
+	background-color: rgba(28,28,28,0.25);
+	margin-top: 3.5vw;
+	margin-left: 0.5vw;
+	border-radius: 0 0 21px 21px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+body .content .boxes .box {
+	display: flex;
+	position: relative;
+	width: 13.5vw;
+	height: 5vw;
+	margin-top: 0.25vw;
+	margin-left: 0.25vw;
+	background-color: rgba(28,28,28,0.25);
+	border-radius: 21px 0 21px 0;
+	align-items: center;
+}
+
+body .content .boxes .box:hover {
+	display: flex;
+	position: relative;
+	width: 13.5vw;
+	height: 5vw;
+	margin-top: 0.25vw;
+	margin-left: 0.25vw;
+	background-color: rgba(128,128,128,0.15);
+	border-radius: 21px 0 21px 0;
+
+	align-items: center;
+}
+
+body .content .boxes .box .boximg {
+	display: flex;
+	margin-left: 1vw;
+	width: 5vw;
+	height: 4.5vw;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(1,1,0,0.20);
+	border-radius: 21px;
+}
+
+
+body .content .boxes .box .boximg img{
+	width: 4vw;
+}
+
+body .content .boxes .box .price {
+	display: flex;
+	margin-left: 1.5vw;
+	width: 5vw;
+	height: 4.5vw;
+	align-items: center;
+	justify-content: center;
+	border-radius: 21px;
+	font-family: 'Oswald', sans-serif;
+    font-size: calc(10px + 0.390625vw);
+    text-transform: uppercase;
+    color: orangered;
+    text-shadow: black 1px 2px 0px, black 1px 3px 2.5px;
+}
